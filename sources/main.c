@@ -6,7 +6,7 @@
 /*   By: lkarri <lkarri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 15:44:55 by lkarri            #+#    #+#             */
-/*   Updated: 2021/10/25 23:49:32 by lkarri           ###   ########.fr       */
+/*   Updated: 2021/10/26 10:57:48 by lkarri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ int	main(int argc, char **argv)
 		return (-1);
 	}
 	simulation (&data);
+	free(data.fork);
+	free(data.philo_data);
 	return (0);
 }

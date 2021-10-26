@@ -6,7 +6,7 @@
 /*   By: lkarri <lkarri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 16:24:45 by lkarri            #+#    #+#             */
-/*   Updated: 2021/10/25 23:54:13 by lkarri           ###   ########.fr       */
+/*   Updated: 2021/10/26 10:57:14 by lkarri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	destroy_mutex(t_input_data *data)
 		i++;
 	}
 	pthread_mutex_destroy(&(data->message));
+	pthread_mutex_destroy(&(data->last_meal));
 }
 
 void	init_mutex(t_input_data *data)
